@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Emotion detection from text</title>
+    <meta content="Emotion detection from text">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container .title{
+            font-family: 'Acme', sans-serif;
+            font-size: 55px;
+        }
+
+        nav .nav-title{
+            color: white;
+            font-family: 'Lobster Two', cursive;
+            font-size: 30px;
+        }
+
+        .navbar-nav .nav-item{
+            font-size: 20px;
+        }
+
+        .about{
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .card-body{
+            border: 2px solid black;
+            box-shadow: 0 0 5px black;
+        }
+
+        .card-body:hover{
+            box-shadow: 0 0 10px black;
+        }
+
+        textarea{
+            border: 2px solid black;
+        }
+
+        ul li{
+            display: inline;
+            list-style: none;
+        }
+
+        .body-links .fa {
+            color: black !important;
+            font-size: 30px;
+        }
+
+        a:hover{
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .body-links .fa:hover{
+            text-shadow: 0 0 10px black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
+        <a class="nav-title" href="">Emotion detection from text</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <br><br><br>
+
+        <div class="container">
+        <center>
+            <div class="alert alert-danger">
+                <b>{{ message }}</b>
+            </div>
+        </center>
+        </div> 
+    <div class="container">
+        <center><h1 class="title">Emotion detection from text</h1></center>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form class="card card-body" action="" method="POST">
+                    <textarea rows="10" name="news" placeholder="Enter the news here..."></textarea><br>
+                    <button class="btn btn-primary"><b>PREDICT</b></button>
+                </form>
+            </div>
+</body>
+
+</html>
